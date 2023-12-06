@@ -1,9 +1,10 @@
 
 
 document.entrada.addEventListener('submit', leFormulario);
-leFormulario();
+//leFormulario();
 
-function leFormulario(){
+function leFormulario(event) {
+    event.preventDefault();
     const fruta = document.entrada.fruta.value;
     const quantidade = document.entrada.quantidade.value;
 
