@@ -9,10 +9,36 @@
 <body>
     <h1>DCC202 - Atividade 12: Breno</h1>
     <section>
-        <form action="">
-            <input />
+        <form name="entrada" >
+            <fieldset>
+                <legend>Origem</legend>
+                <label><input type="radio" name="origem" value="pomar" checked />Pomar</label>
+                <label><input type="radio" name="origem" value="joao" />João</label>
+                <label><input type="radio" name="origem" value="maria" />Maria</label>
+            </fieldset>
+            <fieldset>
+                <legend>Destino</legend>
+                <label><input type="radio" name="Destino" value="pomar"  />Pomar</label>
+                <label><input type="radio" name="Destino" value="joao" />João</label>
+                <label><input type="radio" name="Destino" value="maria" checked />Maria</label>
+            </fieldset>
+
+            <label for="ifruta">Fruta:</label>
+            <select id="ifruta" name="fruta">
+                <option value="maca">Maçã</option>
+                <option value="pera">Pera</option>
+                <option value="banana">Banana</option>
+                <option value="uva">Uva</option>
+            </select>
+            <label for="iqtd">Quantidade:</label>
+            <input id="iqtd" type="number" name="quantidade" min="0" max="12" step="1" />
             <input type="submit">
         </form>
+    </section>
+    <section>
+        <h2>Estoque</h2>
+        <ol id="olJoao" ></ol>
+        <ol id="olMAria" ></ol>
     </section>
 </body>
 </html>
