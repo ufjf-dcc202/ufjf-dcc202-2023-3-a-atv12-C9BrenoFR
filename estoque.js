@@ -1,4 +1,6 @@
 
+export {getEstoque};
+export {transacao};
 
 let estoque = {
 joao:  [
@@ -12,5 +14,11 @@ maria: [
 }
 
 function getEstoque(){
-    return estoque;
+    return structuredClone(estoque);
+}
+
+function transacao(origem, destino, quantidade, fruta){
+    if(origem === 'pomar'){
+        estoque[destino][0].qtd += quantidade;
+    }
 }
