@@ -1,3 +1,4 @@
+import { transacao } from "./estoque.js";
 
 
 document.entrada.addEventListener('submit', leFormulario);
@@ -10,7 +11,10 @@ function leFormulario(event) {
     event.preventDefault();
     const fruta = document.entrada.fruta.value;
     const quantidade = document.entrada.quantidade.value;
-
-    console.log('fruta: ${fruta} qtd: ${quantidade}');
+    const origem = document.entrada.origem.value;
+    const destino = document.entrada.destino.value;
+    console.log(`Solicitado: ${origem} doa ${quantidade} ${fruta} para ${destino}`);
     //document.entrada.submit();
+
+    transacao(origem, destino, quantidade, fruta);
 }
