@@ -4,8 +4,8 @@ import { getEstoque, transacao } from "./estoque.js";
 document.entrada.addEventListener('submit', leFormulario);
 //leFormulario();
 
-const olJoao = document.querySelector('#olJoao');
-const olMaria = document.querySelector('#olMaria');
+const olJoao = document.querySelector('#joao');
+const olMaria = document.querySelector('#maria');
 
 atualizaTela();
 
