@@ -1,23 +1,22 @@
 
 export {getEstoque};
-export {transacao};
+export {transacaoNoEstoque};
+export {limpaEstoque};
 
 let estoque = {
-joao:  [
-    {tipo:'maca', qtd: 1},
-    {tipo:'pera', qtd: 1},
-],
-maria: [
-    {tipo:'maca', qtd: 2}, 
-    {tipo:'banana', qtd: 4},
-],
+    'joao': [{'tipo': 'maca', 'quantidade': 1}],
+    'maria': [{'tipo': 'maca', 'quantidade': 2}]
+};
+
+function limpaEstoque() {
+    estoque = {}
 }
 
 function getEstoque(){
     return structuredClone(estoque);
 }
 
-function transacao(origem, destino, quantidade, fruta){
+function transacaoNoEstoque(origem, destino, quantidade, fruta){
     if (origem === destino) {
         return;
     }
