@@ -9,6 +9,7 @@
 <body>
     <main>
     <h1>DCC202 - Atividade 12: Breno</h1>
+    <p>Esta é a página principal que usa JavaScript para adicionar iteração.</p>
     <section>
         <form name="entrada" >
             <fieldset>
@@ -32,16 +33,15 @@
                 <option value="uva">Uva</option>
             </select>
             <label for="iqtd">Quantidade:</label>
-            <input id="iqtd" type="number" name="quantidade" min="0" max="12" step="1" />
-            <input type="submit">
+            <input id="iqtd" type="number" name="quantidade" min="0" max="12" step="1" value="1" />
+            <button type="submit" >Enviar</button>
         </form>
     </section>
-    <section>
-        <h2>Estoque</h2>
-        <h3>João</h3>
-        <ol id="olJoao" ></ol>
-        <h3>Maria</h3>
-        <ol id="olMaria" ></ol>
+    <section id="saida">
+        <h2>João</h2>
+        <ol id="joao" ></ol>
+        <h2>Maria</h2>
+        <ol id="maria" ></ol>
     </section>
 </main>
 </body>
